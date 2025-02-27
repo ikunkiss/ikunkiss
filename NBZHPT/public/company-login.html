@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保险公司登录 - 农保智慧平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="农保智慧平台logo">
+            <a href="index.html" class="site-name">农保智慧平台</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="farmer-login.html">农户登录</a></li>
+                <li><a href="company-login.html">保险公司登录</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>保险公司登录</h2>
+        <form id="companyLoginForm">
+            <div>
+                <label for="username">用户名：</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">密码：</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">登录</button>
+        </form>
+        <p>还没有账号？<a href="company-register.html">点击注册</a></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 农保智慧平台</p>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="company-login.js"></script>
+</body>
+</html>

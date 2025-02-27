@@ -1,0 +1,332 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('xm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.9);
+    color: white;
+    text-align: center;
+    padding: 0.3rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+section {
+    background-color: rgba(220, 220, 220, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1, h2, h3 {
+    color: #1b5e20;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after, h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #4CAF50;
+    border-radius: 3px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(245, 245, 245, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+    outline: none;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #1b5e20;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.95);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.cta-buttons {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 列表样式 */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+li {
+    background-color: rgba(210, 210, 210, 0.8);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: rgba(200, 200, 200, 0.9);
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 500;
+}
+
+tr:hover {
+    background-color: rgba(235, 235, 235, 0.9);
+}
+
+/* 状态标签 */
+.status-tag {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-paid {
+    background-color: #43a047;
+    color: white;
+    box-shadow: 0 2px 4px rgba(67, 160, 71, 0.2);
+}
+
+.status-unpaid {
+    background-color: #e53935;
+    color: white;
+    box-shadow: 0 2px 4px rgba(229, 57, 53, 0.2);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .logo-container {
+        position: static;
+        justify-content: center;
+        transform: none;
+        margin-bottom: 5px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    li {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* 添加 logo 和网站名称的样式 */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+.logo-container img {
+    height: 28px;
+    width: auto;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.logo-container .site-name {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}

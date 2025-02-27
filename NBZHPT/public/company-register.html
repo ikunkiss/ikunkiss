@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保险公司注册 - 农保智慧平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="农保智慧平台logo">
+            <a href="index.html" class="site-name">农保智慧平台</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="farmer-login.html">农户登录</a></li>
+                <li><a href="company-login.html">保险公司登录</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>保险公司注册</h2>
+        <form id="companyRegisterForm">
+            <div>
+                <label for="companyName">公司名称：</label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+            <div>
+                <label for="creditCode">统一社会信用代码：</label>
+                <input type="text" id="creditCode" name="creditCode" required>
+            </div>
+            <div>
+                <label for="contact">联系人：</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+            <div>
+                <label for="phone">联系电话：</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="location">公司所在地：</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div>
+                <label for="username">用户名：</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">密码：</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">注册</button>
+        </form>
+        <p>已有账号？<a href="company-login.html">点击登录</a></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 农保智慧平台</p>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="company-register.js"></script>
+</body>
+</html>
